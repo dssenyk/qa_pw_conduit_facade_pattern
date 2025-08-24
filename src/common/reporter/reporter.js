@@ -1,4 +1,4 @@
-import * as allure from 'allure-js-commons';
+import { allure } from 'allure-playwright';
 
 export class Reporter {
   linkParentSuite(name) {
