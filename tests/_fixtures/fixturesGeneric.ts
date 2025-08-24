@@ -49,10 +49,10 @@ export const test = base.extend<
         logger,
       );
 
-      await allure.parentSuite(parentSuite);
-      await allure.suite(suite);
+      await reporter.linkParentSuite(parentSuite);
+      await reporter.linkSuite(suite);
       if (subSuite) {
-        await allure.subSuite(subSuite);
+        await reporter.linkSubSuite(subSuite);
       }
 
       await use('addAllureTestHierarhy');
